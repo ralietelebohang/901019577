@@ -1,0 +1,694 @@
+/* style.css - Modern HR Portal - Complete Updated Version */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Poppins', sans-serif;
+    background: #1f6392;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* Header & Navigation */
+.site-header {
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 18px 32px;
+}
+
+.logo {
+    font-size: 1.65rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: #0f3b5f;
+}
+
+.logo i {
+    color: #2c7da0;
+    margin-right: 8px;
+}
+
+.logo-accent {
+    color: #2c7da0;
+    font-weight: 600;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #334155;
+    transition: 0.2s ease;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.main-nav a i {
+    font-size: 0.9rem;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: #1f6392;
+    border-bottom: 2px solid #1f6392;
+    padding-bottom: 4px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #1f6392;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+}
+
+.btn-primary:hover {
+    background: #0c4b71;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -5px rgba(31,99,146,0.2);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1.5px solid #1f6392;
+    color: #1f6392;
+    padding: 10px 22px;
+    border-radius: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-secondary:hover {
+    background: #eef4fc;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    padding: 64px 0 48px;
+    background: linear-gradient(135deg, #f8fafd 0%, #ffffff 100%);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #0f2c3f;
+}
+
+.highlight {
+    color: #2c7da0;
+}
+
+.hero-text p {
+    font-size: 1.15rem;
+    color: #475569;
+    margin-bottom: 32px;
+}
+
+.hero-img img {
+    width: 100%;
+    border-radius: 32px;
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
+    object-fit: cover;
+    height: auto;
+}
+
+/* Staff Grid */
+.staff-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.staff-card {
+    background: white;
+    border-radius: 24px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: all 0.25s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    border: 1px solid #e9edf2;
+    flex: 1 1 200px;
+    min-width: 180px;
+}
+
+.staff-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -12px rgba(0,0,0,0.08);
+}
+
+.staff-img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    background: #eef2ff;
+}
+
+.staff-card h3 {
+    font-size: 1.2rem;
+    margin: 8px 0 4px;
+}
+
+.section-header h2{
+    color: white;
+} 
+.section-header p{
+    color: white;
+} 
+
+.staff-card p {
+    color: #4b5563;
+    font-size: 0.85rem;
+}
+
+.staff-card i {
+    margin-top: 10px;
+    color: #2c7da0;
+}
+
+/* Values preview */
+.values-preview {
+    padding: 40px 0 60px;
+    background: #ffffff;
+}
+
+.values-grid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.value-item {
+    background: #f8fafc;
+    border-radius: 28px;
+    padding: 32px 24px;
+    text-align: center;
+    flex: 1;
+    min-width: 220px;
+    transition: 0.2s;
+    border: 1px solid #e2e8f0;
+}
+
+.value-item i {
+    font-size: 2.4rem;
+    color: #1f6392;
+    margin-bottom: 16px;
+}
+
+.value-item h3 {
+    margin-bottom: 12px;
+}
+
+/* Page header */
+.page-header {
+    background: #ffffff;
+    border-bottom: 1px solid #eef2f6;
+    padding: 48px 0 32px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+/* Two columns culture */
+.two-columns {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin: 48px 0;
+}
+
+.mission-box, .environment-box {
+    background: white;
+    border-radius: 28px;
+    padding: 32px;
+    box-shadow: 0 6px 14px #eef2f6;
+}
+
+.mission-box i, .environment-box i {
+    font-size: 2rem;
+    color: #2c7da0;
+    margin-bottom: 16px;
+}
+
+/* Internal HR Policies - Professional icon styles */
+.internal-links-card {
+    background: #eef4fc;
+    border-radius: 32px;
+    padding: 32px;
+    margin: 48px 0 24px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.internal-links-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.internal-links-card > i:first-child {
+    font-size: 2.5rem;
+    color: #1f6392;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.internal-links-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+    color: #0f2c3f;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.policies-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.policies-list li {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    background: white;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.policies-list li:hover {
+    background: #ffffff;
+    border-color: #2c7da0;
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px rgba(44,125,160,0.1);
+}
+
+.policies-list li i {
+    font-size: 1.3rem;
+    width: 32px;
+    color: #2c7da0;
+    text-align: center;
+}
+
+.policies-list li a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 500;
+    flex: 1;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.policies-list li a:hover {
+    color: #1f6392;
+}
+
+.policy-note {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #cbd5e1;
+    font-size: 0.9rem;
+    color: #475569;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.policy-note i {
+    color: #2c7da0;
+    font-size: 1.1rem;
+}
+
+/* Jobs Grid */
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin: 48px 0;
+}
+
+.job-card {
+    background: white;
+    border-radius: 28px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s;
+}
+
+.job-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+}
+
+.job-card i {
+    font-size: 2rem;
+    color: #1f6392;
+    margin-bottom: 12px;
+}
+
+.job-card h3 {
+    margin: 8px 0 12px;
+}
+
+.requirements {
+    list-style: none;
+    margin: 16px 0;
+}
+
+.requirements li {
+    margin: 8px 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.job-ref {
+    font-size: 0.75rem;
+    color: #5b6e8c;
+    display: block;
+    margin-top: 16px;
+    border-top: 1px solid #edf2f7;
+    padding-top: 12px;
+}
+
+.apply-note {
+    background: #eef2fa;
+    padding: 24px;
+    border-radius: 28px;
+    text-align: center;
+    margin: 20px 0 48px;
+}
+
+/* Benefits page */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 32px;
+    margin: 48px 0;
+}
+
+.benefit-card {
+    background: white;
+    border-radius: 28px;
+    padding: 28px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+    border: 1px solid #eef2f6;
+}
+
+.benefits-list {
+    list-style: none;
+    margin-top: 18px;
+}
+
+.benefits-list li {
+    margin: 10px 0;
+    padding-left: 6px;
+}
+
+.extra-benefits {
+    background: #f1f5f9;
+    border-radius: 28px;
+    padding: 32px;
+    margin: 24px 0 48px;
+}
+
+.ordered-perks {
+    margin-left: 28px;
+    margin-top: 16px;
+}
+
+.benefits-currency-note {
+    margin-top: 20px;
+    font-weight: 500;
+    background: white;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 40px;
+}
+
+/* Training page styles */
+.training-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 32px;
+    margin: 48px 0;
+}
+
+.training-card {
+    background: white;
+    border-radius: 28px;
+    padding: 28px;
+    border: 1px solid #eef2f6;
+}
+
+/* Two-column video grid for training page */
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    margin: 32px 0;
+}
+
+.video-card {
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #eef2f6;
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.video-card .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    background: #000;
+}
+
+.video-card .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-card h3 {
+    font-size: 1.25rem;
+    margin: 20px 20px 12px;
+    color: #0f2c3f;
+}
+
+.video-card p {
+    margin: 0 20px 16px;
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.video-duration {
+    display: inline-block;
+    margin: 0 20px 20px;
+    font-size: 0.8rem;
+    color: #2c7da0;
+    background: #eef4fc;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.video-caption {
+    background: #f8fafc;
+    padding: 16px 20px;
+    border-radius: 16px;
+    margin-top: 24px;
+    font-size: 0.9rem;
+    color: #2d3748;
+    border-left: 4px solid #2c7da0;
+}
+
+.video-section {
+    margin: 48px 0;
+    background: #ffffff;
+    border-radius: 32px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+}
+
+.learning-sections {
+    background: #f8fafc;
+    border-radius: 32px;
+    padding: 32px;
+    margin: 32px 0 64px;
+}
+
+.learning-list {
+    list-style: none;
+    margin: 24px 0;
+}
+
+.learning-list li {
+    margin: 16px 0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.cta-training {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+/* Footer */
+.site-footer {
+    background: #0f2c3f;
+    color: #cbd5e6;
+    padding: 32px 0;
+    margin-top: 40px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #cbd5e6;
+    margin-left: 20px;
+    font-size: 1.4rem;
+    transition: 0.2s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 860px) {
+    .hero-grid, .two-columns {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .header-flex {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .staff-card {
+        min-width: 150px;
+    }
+    
+    .policies-list li {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .policies-list li i {
+        width: 28px;
+    }
+    
+    .internal-links-card h3 {
+        font-size: 1.3rem;
+    }
+}
